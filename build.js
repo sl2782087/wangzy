@@ -15,33 +15,29 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('           Tierney Cyren'),
-  handle: chalk.white('bitandbang'),
-  shorthandle: chalk.white('bnb'),
-  work: chalk.white('Staff Developer Advocate at Twilio'),
-  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bitandbang'),
-  npm: chalk.gray('https://npmjs.com/') + chalk.red('~bnb'),
-  github: chalk.gray('https://github.com/') + chalk.green('bnb'),
-  linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('bitandbang'),
-  web: chalk.cyan('https://bnb.im'),
-  npx: chalk.red('npx') + ' ' + chalk.white('bitandbang'),
+  name: chalk.white('           王宗禹'),
+  handle: chalk.white('wangzy'),
+  work: chalk.white('前端开发 / 未来推理小说家'),
+  juejin: chalk.gray('https://juejin.cn/user/') + chalk.cyan('1063982984594861'),
+  npm: chalk.gray('https://npmjs.com/') + chalk.red('~sl2782087'),
+  github: chalk.gray('https://github.com/') + chalk.green('sl2782087'),
+  web: chalk.cyan('https://zongyu.wang'),
+  npx: chalk.red('npx') + ' ' + chalk.white('wangzy'),
   labelWork: chalk.white.bold('    Work:'),
-  labelTwitter: chalk.white.bold(' Twitter:'),
+  labelJuejin: chalk.white.bold('    掘金:'),
   labelnpm: chalk.white.bold('     npm:'),
   labelGitHub: chalk.white.bold('  GitHub:'),
-  labelLinkedIn: chalk.white.bold('LinkedIn:'),
   labelWeb: chalk.white.bold('     Web:'),
   labelCard: chalk.white.bold('    Card:')
 }
 
 // Actual strings we're going to output
 const newline = '\n'
-const heading = `${data.name} / ${data.handle} / ${data.shorthandle}`
+const heading = `${data.name} / ${data.handle}`
 const working = `${data.labelWork}  ${data.work}`
-const twittering = `${data.labelTwitter}  ${data.twitter}`
+const juejining = `${data.labelJuejin}  ${data.juejin}`
 const npming = `${data.labelnpm}  ${data.npm}`
 const githubing = `${data.labelGitHub}  ${data.github}`
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
 const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
@@ -49,10 +45,9 @@ const carding = `${data.labelCard}  ${data.npx}`
 const output = heading + // data.name + data.handle
                newline + newline + // Add one whole blank line
                working + newline + // data.labelWork + data.work
-               twittering + newline + // data.labelTwitter + data.twitter
+               juejining + newline + // data.labelTwitter + data.twitter
                npming + newline + // data.labelnpm + data.npm
                githubing + newline + // data.labelGitHub + data.github
-               linkedining + newline + // data.labelLinkedIn + data.linkedin
                webing + newline + newline + // data.labelWeb + data.web
                carding // data.labelCard + data.npx
 
